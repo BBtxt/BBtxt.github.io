@@ -23,7 +23,7 @@ renderer.render(scene, camera);
 
 //---------------- Lighting--------------------// 
 const pointLight = new THREE.PointLight(0xffffff)
-pointLight.position.set(20,0,0)
+pointLight.position.set(10,0,0)
 
 const ambientLight = new THREE.AmbientLight(0xffffff)
 scene.add(pointLight, ambientLight)
@@ -58,7 +58,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
   //----------- Stars -------------//
   function addStar() {
   const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-  const material = new THREE.MeshStandardMaterial({color:0x000000})
+  const material = new THREE.MeshStandardMaterial({color:0xE3ECED})
   const Star = new THREE.Mesh( geometry, material );
 
   const [x, y, z]= Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100));
