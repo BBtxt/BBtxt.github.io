@@ -27,6 +27,9 @@ section {
 
 }
 
+
+
+
 /* utils */
 
 .lvl1 {
@@ -86,9 +89,24 @@ section {
 }
 
 
+/* section 2 */
 
+/* section 3 */
+.projects-container {
+    display:  flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
 
-
+.projects {
+    flex: auto;
+}
+.loading {
+    display: flex;
+    justify-content: center;
+}
 
 
 /* WAVEY TINGS */
