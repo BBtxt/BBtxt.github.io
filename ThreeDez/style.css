@@ -5,6 +5,26 @@ canvas {
 }
 
 body {
-  background: rgb(255, 252, 252);
-  background: radial-gradient(circle, rgba(255, 252, 252, 1) 11%, rgba(215, 228, 245, 1) 55%, rgba(183, 199, 214, 1) 88%);
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 43%, rgba(0,212,255,1) 100%);
+}
+
+.custom-shape-divider-top-1660948830 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1660948830 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 132px;
+}
+
+.custom-shape-divider-top-1660948830 .shape-fill {
+  fill: #000000;
 }

@@ -1,4 +1,12 @@
-*{
+:root {
+    --depthColor1: #bedaf3;
+    --depthColor2: #67a8e4;
+    --depthColor3: #2375c3;
+    --depthColor4: #13416c;
+    --depthColor5: ;
+}
+
+* {
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
@@ -6,21 +14,267 @@
 body {
     padding: 0;
     margin: 0;
+    color: white;
 }
 
-.main-containter {
-   display: flex;
-   justify-content: center;
-   position: fixed;
-   top: 50%;
-   left: 50%;
-   /* bring your own prefixes */
-   transform: translate(-50%, -50%);
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
 
 }
 
-.UD{
-    text-align: center;
-    flex: 1;
-    
+/* utils */
+
+.lvl1 {
+    background: var(--depthColor1);
+}
+
+.lvl2 {
+    background: var(--depthColor2);
+}
+
+.lvl3 {
+    background: var(--depthColor3);
+}
+
+.lvl4 {
+    background: var(--depthColor4);
+}
+
+/* section 1 */
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    padding: 0;
+}
+
+.hero-text1 {
+    padding: 0% 1.25em 0 0;
+    margin: 0%;
+    font-size: 10vh;
+}
+
+.hero-text2 {
+    padding: 0% 1.25em 0 0;
+    margin: 0;
+    font-size: 5vh;
+}
+
+.header-right {
+    display: flex;
+}
+
+
+.profile_pic {
+    margin: auto;
+    max-width: 75%;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+/* WAVEY TINGS */
+
+/* first div */
+
+/* bottom of first div */
+
+.custom-shape-divider-bottom-1660948963 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1660948963 svg {
+    position: relative;
+    display: block;
+    width: calc(152% + 1.3px);
+    height: 157px;
+}
+
+.custom-shape-divider-bottom-1660948963 .shape-fill {
+    fill: #000000;
+}
+
+/* ----------------------------second div----------------------------- */
+
+/* top ting */
+
+.custom-shape-divider-top-1660949315 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1660949315 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 79px;
+}
+
+.custom-shape-divider-top-1660949315 .shape-fill {
+    fill: #000000;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1660949315 svg {
+        width: calc(100% + 1.3px);
+        height: 110px;
+    }
+}
+
+/* bottom ting */
+
+.custom-shape-divider-bottom-1660949726 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1660949726 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 167px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1660949726 .shape-fill {
+    fill: #000000;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1660949726 svg {
+        width: calc(100% + 1.3px);
+        height: 110px;
+    }
+}
+
+/* ----------------------------third ting div----------------------------- */
+.custom-shape-divider-top-1660949875 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1660949998 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1660949998 svg {
+    position: relative;
+    display: block;
+    width: calc(169% + 1.3px);
+    height: 165px;
+}
+
+.custom-shape-divider-bottom-1660949998 .shape-fill {
+    fill: #000000;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1660949998 svg {
+        width: calc(169% + 1.3px);
+        height: 110px;
+    }
+}
+
+/* ----------------------------fourth ting div----------------------------- */
+
+.custom-shape-divider-top-1660950347 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1660950347 svg {
+    position: relative;
+    display: block;
+    width: calc(169% + 1.3px);
+    height: 147px;
+}
+
+.custom-shape-divider-top-1660950347 .shape-fill {
+    fill: #000000;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1660950347 svg {
+        width: calc(169% + 1.3px);
+        height: 110px;
+    }
+}
+
+.custom-shape-divider-bottom-1660950429 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1660950429 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 147px;
+}
+
+.custom-shape-divider-bottom-1660950429 .shape-fill {
+    fill: #000000;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1660950429 svg {
+        width: calc(100% + 1.3px);
+        height: 110px;
+    }
 }
