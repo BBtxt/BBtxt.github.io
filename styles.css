@@ -86,29 +86,117 @@ section {
     width: auto;
     height: auto;
     border-radius: 50%;
-}
+}ı
 
 
 /* section 2 */
 
 /* section 3 */
 .projects-container {
-    display:  flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.projects {
-    flex: auto;
-}
-.loading {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+    z-index: 1;
+}
+
+.blob {
+    z-index: 0;
+    height: 20rem;
+    width: 20rem;
+
+    /* transform: translate(-100% -20%); */
+
+}
+.contact-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-btn {
+    width: 120%;
+    height: 120%;
 }
 
 
+.waveTextAnimated {
+    margin-top: 0.6em;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.waveTextAnimated span {
+    display: inline-block;
+    -webkit-animation: wave-text 1s ease-in-out infinite;
+            animation: wave-text 1s ease-in-out infinite;
+  }
+
+.waveTextAnimated span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  .waveTextAnimated span:nth-of-type(2) {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+  }
+  .waveTextAnimated span:nth-of-type(3) {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+  .waveTextAnimated span:nth-of-type(4) {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .waveTextAnimated span:nth-of-type(5) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  .waveTextAnimated span:nth-of-type(6) {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  .waveTextAnimated span:nth-of-type(7) {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+  }
+  .waveTextAnimated span:nth-of-type(8) {
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+  }
+  .waveTextAnimated span:nth-of-type(9) {
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+  }
+  .waveTextAnimated span:nth-of-type(10) {
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+  }
+  
+  @-webkit-keyframes wave-text {
+    00% {
+      transform: translateY(0em);
+    }
+    60% {
+      transform: translateY(-0.6em);
+    }
+    100% {
+      transform: translateY(0em);
+    }
+  }
+   
+  @keyframes wave-text {
+    00% {
+      transform: translateY(0em);
+    }
+    60% {
+      transform: translateY(-0.6em);
+    }
+    100% {
+      transform: translateY(0em);
+    }
+  }
 /* WAVEY TINGS */
 
 /* first div */
